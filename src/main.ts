@@ -15,7 +15,7 @@ const renderCalculatorInputs = () => {
     .map(
       (input) =>
         ` <div class="card">
-             <button class="card__input" type="button">${input}</button>
+             <div class="card__input" type="button">${input}</div>
           </div>`
     )
     .join("");
@@ -30,7 +30,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </div>
   </header>
   <main>
-    <div class="result">0</div>
+    <div class="result"><h1>0</h1></div>
     <div class="inputs">
     ${renderCalculatorInputs()}
 
